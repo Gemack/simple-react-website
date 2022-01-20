@@ -1,0 +1,59 @@
+:root {
+  --b: blue;
+  --lb: rgb(48, 118, 247);
+  --bs: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 20px;
+}
+
+section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 50rem;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.small-text {
+  font-size: 0.6rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.text-light {
+  color: whitesmoke;
+}
+.text-dark {
+  color: rgb(10, 9, 9);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0.75rem;
+}
+
+.title p {
+  width: 50%;
+  min-width: 20rem;
+  margin: 0 auto;
+}

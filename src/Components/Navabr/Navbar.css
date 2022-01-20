@@ -1,0 +1,126 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-text {
+  color: red;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 0.5rem;
+  list-style: none;
+}
+.nav-links li a {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--lb);
+  transition: all 1.5s;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
+
+a.btn {
+  border: 2px solid var(--b);
+  border-radius: 5px;
+  padding: 0.4rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+a.btn-dark {
+  border: 2px solid var(--b);
+  background: transparent;
+}
+
+a.btn-red {
+  border: 2px solid transparent;
+  background: red;
+  color: white;
+}
+
+.navbar .menu-icons {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .nav-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+  }
+  .nav-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    border: 2px solid white;
+    z-index: 121;
+  }
+  .navbar .menu-icons {
+    display: block;
+  }
+  .navbar #nav-links-mobile,
+  .navbar #nav-links-mobile-hide {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    width: 100%;
+    border-top: 1px solid whitesmoke;
+    padding-bottom: 5px;
+    transition: all 1.6s;
+  }
+  .navbar #nav-links-mobile {
+    animation: slide-in 0.5s ease-in-out;
+    @keyframes slide-in {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+  .navbar #nav-links-mobile-hide {
+    animation: slide-out 0.5s ease-in-out;
+    left: -100%;
+  }
+
+  .navbar #nav-links-mobile li,
+  .navbar #nav-links-mobile-hide li {
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid white;
+    margin: 0 1.5rem;
+  }
+  .navbar #nav-links-mobile li:last-child,
+  .navbar #nav-links-mobile-hide li:last-child {
+    border-bottom: none;
+  }
+}

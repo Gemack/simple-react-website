@@ -1,0 +1,30 @@
+a {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--lb);
+  transition: all 1.5s;
+}
+a:hover {
+  color: rgb(114, 7, 7);
+}
+
+a.btn {
+  border: 2px solid var(--b);
+  border-radius: 5px;
+  padding: 0.4rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+a.btn-dark {
+  border: 2px solid var(--b);
+  background: transparent;
+}
+
+a.btn-red {
+  border: 2px solid transparent;
+  background: red;
+  color: white;
+}

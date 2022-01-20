@@ -1,0 +1,53 @@
+#download {
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+  text-align: center;
+  color: whitesmoke;
+}
+
+#download h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0.7rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.download h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 10%;
+  height: 1px;
+  color: white;
+  transform: translateX(-50%);
+}
+
+.platform-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.platform-icon {
+  margin: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 11px;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.platform-icon:hover {
+  opacity: 0.6;
+  width: 8.1rem;
+}

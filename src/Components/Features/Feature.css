@@ -1,0 +1,18 @@
+.features-content {
+  display: flex;
+  justify-content: center;
+}
+.features-right {
+  flex: 1;
+}
+
+@media screen and (max-width: 620px) {
+  .features-content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 769px) {
+  .features-content {
+    flex-direction: column;
+  }
+}
